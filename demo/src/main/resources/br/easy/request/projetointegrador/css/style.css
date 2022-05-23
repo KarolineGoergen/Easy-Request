@@ -1,0 +1,63 @@
+.root {
+    -fx-background-color: #A04FFC;
+}
+.textfield {
+    -fx-background-color: white;
+    -fx-text-fill: rgb(77, 77, 77);
+    -fx-border-radius: 50;
+    -fx-border-width: 100;
+    
+}
+
+.label {
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+}
+
+.button-registrar {
+    -fx-background-color:transparent;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    
+}
+
+.button-entrega {
+    -fx-background-color:#9130FF;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+
+}
+
+.button-limpar {
+    -fx-background-color: transparent;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+}
+
+.button:hover{
+    -fx-background-color: #9130FF;
+}
+
+.button-home {
+    -fx-background-color: transparent;
+    -fx-border-radius: 50;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+}
+
+.button-choice {
+    -fx-background-color: #9130FF;
+    -fx-text-fill: #ffffff;
+    -fx-font-weight: bold;
+}
+
+.choice-box .context-menu { -fx-background-color: white; }
+.choice-box .menu-item:focused { -fx-background-color: grey; }
+.choice-box .menu-item > .label { -fx-text-fill: #9130FF; }
+.choice-box .menu-item:focused > .label { -fx-text-fill: white; }
+
+
+.progress-indicator {
+    -fx-progress-color: white;
+}
+

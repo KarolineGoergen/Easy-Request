@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane fx:id="root" prefHeight="800" prefWidth="400" stylesheets="@../css/style.css" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.easy.request.projetointegrador.telas.Home">
+
+   <left>
+
+      <VBox prefHeight="800.0" prefWidth="269.0" spacing="5.0">
+         <padding>
+            <Insets topRightBottomLeft="8.0" />
+         </padding>
+         <HBox prefHeight="72.0" prefWidth="253.0">
+            <children>
+               <AnchorPane prefHeight="200.0" prefWidth="200.0">
+                  <children>
+                     <Label alignment="CENTER" layoutX="62.0" layoutY="46.0" text="EASY REQUEST" textFill="WHITE">
+                        <font>
+                           <Font name="Calibri Bold" size="20.0" />
+                        </font>
+                     </Label>
+                     <ImageView fitHeight="53.0" fitWidth="53.0" layoutY="31.0" nodeOrientation="RIGHT_TO_LEFT" pickOnBounds="true" preserveRatio="true">
+                        <image>
+                           <Image url="@../img/icon.png" />
+                        </image>
+                     </ImageView>
+                  </children>
+               </AnchorPane>
+            </children>
+         </HBox>
+         <Button alignment="BOTTOM_LEFT" onAction="#loadCadastroCliente" prefHeight="40.0" prefWidth="165.0" styleClass="button-home" text="CADASTRAR CLIENTE" />
+         <Button alignment="BOTTOM_LEFT" onAction="#loadCadastroAtendente" prefHeight="40.0" prefWidth="165.0" styleClass="button-home" text="CADASTRAR ATENDENTE" />
+         <Button alignment="BOTTOM_LEFT" onAction="#loadCadastroProduto" prefHeight="40.0" prefWidth="165.0" styleClass="button-home" text="CADASTRAR PRODUTO" />
+         <Button alignment="BOTTOM_LEFT" onAction="#loadCadastroEncomenda" prefHeight="40.0" prefWidth="165.0" styleClass="button-home" text="REGISTRAR ENCOMENDA" />
+         <Button alignment="BOTTOM_LEFT" onAction="#loadListas" prefHeight="40.0" prefWidth="165.0" styleClass="button-home" text="VISUALIZAR" />
+         <Button alignment="BOTTOM_LEFT" onAction="#logout" prefHeight="40.0" prefWidth="165.0" styleClass="button-home" text="SAIR" />
+
+      </VBox>
+   </left>
+
+   <center>
+      <StackPane fx:id="painelCentral" styleClass="background-home" />
+   </center>
+
+</BorderPane>
